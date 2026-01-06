@@ -9,6 +9,7 @@ def setup_marimo():
         "command": [
             f"{Path.home().joinpath('.local', 'bin', 'marimo')}",
             "edit",
+            f"{Path.home()}",
             "--port",
             "{port}",
             "--token",
