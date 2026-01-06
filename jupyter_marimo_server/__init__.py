@@ -7,9 +7,7 @@ def setup_marimo():
     token = secrets.token_urlsafe(16)
     return {
         "command": [
-            "python3",
-            "-m",
-            "marimo",
+            f"{Path.home().joinpath('.local', 'bin', 'marimo')}",
             "edit",
             "--port",
             "{port}",
