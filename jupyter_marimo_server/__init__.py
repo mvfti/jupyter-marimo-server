@@ -16,6 +16,8 @@ def setup_marimo():
             "--token-password",
             token,
             "--headless",
+            "--allow-origins",
+            "*",
         ],
         "environment": {},
         "timeout": 120,
